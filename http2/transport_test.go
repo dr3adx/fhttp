@@ -33,10 +33,10 @@ import (
 
 	tls "github.com/refraction-networking/utls"
 
-	http "github.com/Danny-Dasilva/fhttp"
-	"github.com/Danny-Dasilva/fhttp/http2/hpack"
-	"github.com/Danny-Dasilva/fhttp/httptest"
-	"github.com/Danny-Dasilva/fhttp/httptrace"
+	http "github.com/dr3adx/fhttp"
+	"github.com/dr3adx/fhttp/http2/hpack"
+	"github.com/dr3adx/fhttp/httptest"
+	"github.com/dr3adx/fhttp/httptrace"
 )
 
 var (

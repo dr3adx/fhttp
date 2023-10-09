@@ -13,7 +13,7 @@ import (
 
 	tls "github.com/refraction-networking/utls"
 
-	http "github.com/Danny-Dasilva/fhttp"
+	http "github.com/dr3adx/fhttp"
 )
 
 // NewRequest returns a new incoming server Request, suitable

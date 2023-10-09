@@ -19,8 +19,8 @@ import (
 
 	tls "github.com/refraction-networking/utls"
 
-	http "github.com/Danny-Dasilva/fhttp"
-	"github.com/Danny-Dasilva/fhttp/internal"
+	http "github.com/dr3adx/fhttp"
+	"github.com/dr3adx/fhttp/internal"
 )
 
 // A Server is an HTTP server listening on a system-chosen port on the

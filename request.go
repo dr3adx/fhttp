@@ -24,11 +24,11 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/Danny-Dasilva/fhttp/http2/hpack"
+	"github.com/dr3adx/fhttp/http2/hpack"
 
 	tls "github.com/refraction-networking/utls"
 
-	"github.com/Danny-Dasilva/fhttp/httptrace"
+	"github.com/dr3adx/fhttp/httptrace"
 
 	"golang.org/x/net/idna"
 )

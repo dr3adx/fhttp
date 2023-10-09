@@ -39,12 +39,12 @@ import (
 
 	tls "github.com/refraction-networking/utls"
 
-	. "github.com/Danny-Dasilva/fhttp"
-	"github.com/Danny-Dasilva/fhttp/httptest"
-	"github.com/Danny-Dasilva/fhttp/httptrace"
-	"github.com/Danny-Dasilva/fhttp/httputil"
-	"github.com/Danny-Dasilva/fhttp/internal"
-	"github.com/Danny-Dasilva/fhttp/internal/nettrace"
+	. "github.com/dr3adx/fhttp"
+	"github.com/dr3adx/fhttp/httptest"
+	"github.com/dr3adx/fhttp/httptrace"
+	"github.com/dr3adx/fhttp/httputil"
+	"github.com/dr3adx/fhttp/internal"
+	"github.com/dr3adx/fhttp/internal/nettrace"
 
 	"golang.org/x/net/http/httpguts"
 )
