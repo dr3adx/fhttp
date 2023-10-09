@@ -9,14 +9,15 @@
 The h2i command is an interactive HTTP/2 console.
 
 Usage:
-  $ h2i [flags] <hostname>
+
+	$ h2i [flags] <hostname>
 
 Interactive commands in the console: (all parts case-insensitive)
 
-  ping [data]
-  settings ack
-  settings FOO=n BAR=z
-  headers      (open a new stream by typing HTTP/1.1)
+	ping [data]
+	settings ack
+	settings FOO=n BAR=z
+	headers      (open a new stream by typing HTTP/1.1)
 */
 package main
 
@@ -35,7 +36,7 @@ import (
 	"strconv"
 	"strings"
 
-	tls "github.com/Danny-Dasilva/utls"
+	tls "github.com/refraction-networking/utls"
 
 	"github.com/Danny-Dasilva/fhttp/http2"
 	"github.com/Danny-Dasilva/fhttp/http2/hpack"

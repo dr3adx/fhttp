@@ -37,7 +37,7 @@ import (
 	"testing/iotest"
 	"time"
 
-	tls "github.com/Danny-Dasilva/utls"
+	tls "github.com/refraction-networking/utls"
 
 	. "github.com/Danny-Dasilva/fhttp"
 	"github.com/Danny-Dasilva/fhttp/httptest"
@@ -3429,6 +3429,7 @@ func (c writerFuncConn) Write(p []byte) (n int, err error) { return c.write(p) }
 //   - we reused a keep-alive connection
 //   - we haven't yet received any header data
 //   - either we wrote no bytes to the server, or the request is idempotent
+//
 // This automatically prevents an infinite resend loop because we'll run out of
 // the cached keep-alive connections eventually.
 func TestRetryRequestsOnError(t *testing.T) {

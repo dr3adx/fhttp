@@ -13,7 +13,7 @@ import (
 	"strings"
 	"testing"
 
-	tls "github.com/Danny-Dasilva/utls"
+	tls "github.com/refraction-networking/utls"
 
 	. "github.com/Danny-Dasilva/fhttp"
 	"github.com/Danny-Dasilva/fhttp/httptest"
