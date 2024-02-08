@@ -793,6 +793,16 @@ func (c *Client) makeHeadersCopier(ireq *Request) func(*Request) {
 		// (at least the safe ones).
 		for k, vv := range ireqhdr {
 			if shouldCopyHeaderOnRedirect(k, preq.URL, req.URL) {
+				if k == "Host" && preq.URL.Host != req.URL.Host {
+					if len(vv) == 0 {
+						vv = append(vv, req.URL.Host)
+					} else {
+						vv[0] = req.URL.Host
+					}
+
+					req.Header[k] = vv
+					continue
+				}
 				req.Header[k] = vv
 			}
 		}
