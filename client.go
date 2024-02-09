@@ -800,7 +800,7 @@ func (c *Client) makeHeadersCopier(ireq *Request) func(*Request) {
 		// See https://github.com/Danny-Dasilva/CycleTLS/issues/323
 		if shouldUpdateHostInHeader(&ireqhdr, req) {
 			if ireqhdr.has("Host") {
-				if hhost, ok := ireqhdr["Host"]; ok {
+				if hhost, ok := ireqhdr["Host"]; ok && len(hhost) > 0 {
 					hhost[0] = req.URL.Host
 				} else {
 					ireqhdr["Host"] = []string{req.URL.Host}
