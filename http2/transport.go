@@ -830,9 +830,10 @@ func (t *Transport) ApplyPreset() {
 	case Chrome:
 		t.Settings = []Setting{
 			{ID: SettingHeaderTableSize, Val: 65536},
-			{ID: SettingMaxConcurrentStreams, Val: 1000},
+			{ID: SettingEnablePush, Val: 0}, //* new
+			//{ID: SettingMaxConcurrentStreams, Val: 1000}, //old
 			{ID: SettingInitialWindowSize, Val: 6291456},
-			{ID: SettingMaxFrameSize, Val: 16384},
+			//{ID: SettingMaxFrameSize, Val: 16384}, //old
 			{ID: SettingMaxHeaderListSize, Val: 262144},
 		}
 	}
